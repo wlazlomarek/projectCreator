@@ -102,7 +102,7 @@ class MakeProject:
             self.create_new_project(self.template_folder_path, self.terrablock_path, project_name)
             self.app.setEntry("project_name", self.next_project_number(self.terrablock_path))
         else:
-            self.app.infoBox('Warrning', 'You did not type anything')
+            self.app.infoBox('Warrning', 'Enter name for a new project!')
 
             
 if __name__ == '__main__':
