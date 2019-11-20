@@ -5,7 +5,6 @@ import sys
 from string import punctuation
 
 class MakeProject:
-
     def __init__(self):
         self.app = gui()
         self.template_folder_path = 'D:\\terrablock\XXXX_PROJECT_TEMPLATE'
@@ -105,12 +104,8 @@ class MakeProject:
         else:
             self.app.infoBox('Warrning', 'You did not type anything')
 
-
+            
 if __name__ == '__main__':
     app = MakeProject()
     app.start()
     app.network_connection()
-
-
-
-
