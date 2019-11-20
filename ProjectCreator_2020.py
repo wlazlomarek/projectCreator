@@ -7,8 +7,8 @@ from string import punctuation
 class MakeProject:
     def __init__(self):
         self.app = gui()
-        self.template_folder_path = 'D:\\terrablock\XXXX_PROJECT_TEMPLATE'
-        self.terrablock_path = 'D:\\terrablock\\'
+        self.template_folder_path = '/Volumes/terrablock/XXXX_PROJECT_TEMPLATE/'
+        self.terrablock_path = '/Volumes/terrablock/'
 
     def network_connection(self):
         if os.path.exists(self.terrablock_path):
@@ -30,7 +30,7 @@ class MakeProject:
             ' ': '_'
         }
 
-        dictionary_charcters = {x: "_" for x in list(punctuation)}
+        dictionary_charcters = {x: '_' for x in list(punctuation)}
         dictionary_charcters.update(polish_sign_dic)
 
         for el in text:
