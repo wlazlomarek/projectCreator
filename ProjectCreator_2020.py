@@ -48,7 +48,6 @@ class MakeProject:
             self.app.errorBox('Error', f'{error}')
 
     def next_project_number(self, terrablock_path):
-
         project_list = os.listdir(terrablock_path)
         temp_list = [s.lstrip('0').split('_')[0] for s in project_list]
 
