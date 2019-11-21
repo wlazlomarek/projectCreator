@@ -4,9 +4,10 @@ import shutil
 import sys
 from string import punctuation
 
+
 class MakeProject:
     def __init__(self):
-        self.app = gui()
+        self.app = gui(useTtk=True)
         self.template_folder_path = '/Volumes/terrablock/XXXX_PROJECT_TEMPLATE/'
         self.terrablock_path = '/Volumes/terrablock/'
 
@@ -61,11 +62,12 @@ class MakeProject:
         return f'0{str(next_number)}_'
 
     def prepare(self, app):
-        app.setTitle("Milo Postproduction / Project Creator 2020")
-        app.setSize("400x100")
+        app.setTitle("Project Creator 2020 / Milo Postproduction")
+        app.setSize("500x130")
         app.setResizable(canResize=False)
         app.setLocation("CENTER")
-        app.setFont(size=12, family="Lato")
+        app.setTtkTheme('arc')
+        app.setFont(size=14, family="Lato")
         app.setButtonFont(size=11, family="Lato")
 
         # Project Name Label
@@ -78,7 +80,7 @@ class MakeProject:
         app.stopLabelFrame()
 
         # Buttons
-        app.addButtons(["Create Project"], self.press, 1, 0)
+        app.addButtons(["           Create Project          "], self.press, 1, 0)
         app.enableEnter(self.press)
 
         if self.network_connection():
@@ -103,8 +105,7 @@ class MakeProject:
         else:
             self.app.infoBox('Warrning', 'Enter name for a new project!')
 
-            
+
 if __name__ == '__main__':
     app = MakeProject()
     app.start()
-    app.network_connection()
