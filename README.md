@@ -1,7 +1,7 @@
 # projectCreator
 Simple program to create new project folder structure on storage.
 
-Instalation:
+Building app by pyinstaller:
 ```console
 pyinstaller --windowed --icon icon_path --name Project Creator myapp.py 
 cd dist/myapp.app/Contents/MacOs
