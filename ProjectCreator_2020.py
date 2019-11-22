@@ -62,7 +62,7 @@ class MakeProject:
         return f'0{str(next_number)}_'
 
     def prepare(self, app):
-        app.setTitle("Project Creator 2020 / Milo Postproduction")
+        app.setTitle("Project Creator 2020")
         app.setSize("500x130")
         app.setResizable(canResize=False)
         app.setLocation("CENTER")
