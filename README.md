@@ -1,5 +1,5 @@
 # projectCreator
-Simple program to create new project folder structure on storage.
+Simple Mac App which allows create new project folder structure on storage.
 
 Building app by pyinstaller:
 ```console
