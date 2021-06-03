@@ -1,5 +1,5 @@
 # projectCreator
-Simple Mac App which allows create new project folder structure on storage.
+Simple Mac App which allows to create new project folder structure on storage.
 
 ![](https://github.com/wlazlomarek/projectCreator/blob/master/project_creator_screenshot.png)
 
